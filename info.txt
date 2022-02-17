@@ -8,3 +8,7 @@ To run your project, navigate to the directory and run one of the following npm 
 - npm run ios # requires an iOS device or macOS for access to an iOS simulator
 - npm run web
 Project is already inside of a git repo, skipping git init.
+
+
+COMMANDS:
+npm install axios --save
