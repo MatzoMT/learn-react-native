@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View, Image, TouchableWithoutFeedback, TouchableHighlight, TouchableOpacity, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, TouchableHighlight, TouchableOpacity, SafeAreaView } from 'react-native';
 import { isRequired } from 'react-native/Libraries/DeprecatedPropTypes/DeprecatedColorPropType';
 import React from 'react';
 
@@ -37,12 +37,6 @@ Touchable types
 - TouchableWithoutFeedback - do NOT use unless you have a good reason
 - TouchableNativeFeedback - NOT SUPPORTED ON iOS - iOS alternative is TouchableOpacity? 
 */
-
-/*
-Buttons
-iOS - text
-Android - text + button iconm
-*/
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
@@ -54,12 +48,12 @@ export default function App() {
       </TouchableOpacity>
       <TouchableHighlight onPress={() => console.log("touchable highlight!")}>
         <Image source={{
-          width: 100,
-          height: 100,
+          width: 200,
+          height: 400,
           uri: "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/R3QCUUHISFLJNPS4SH3UQBUEE4.jpg"
         }} />
       </TouchableHighlight>
-        <Button></Button>
+
 
       <StatusBar style="auto" />
     </SafeAreaView>
